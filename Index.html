@@ -1,0 +1,487 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>birthday</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Index.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+    </head>
+    <body>
+    <style>
+        body {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+.loading{
+    width:100%;
+    height:100vh;
+    background:#262626;
+}
+.loader{
+   position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:transparent;
+    width:200px;
+    height:200px;
+    border:solid 8px #3c3c3c;
+    border-radius:50%;
+    text-align:center;
+    line-height:210px;
+    font-family:sans-serif;
+    font-size:30px;
+    color:#fff000;
+    letter-spacing:4px;
+    box-shadow:0 0 20px black;
+    text-transform:uppercase;
+    word-spacing:3px;
+}
+.loader:before{
+    content:"";
+    position:absolute;
+    top:-2%;
+    left:-2%;
+    width:100%;
+    height:100%;
+    border:3px solid transparent;
+    border-top:3px solid #fff000;
+    border-right:3px solid #fff000;
+    border-radius:50%;
+    animation:animateCircle 2s linear infinite;
+}
+span{
+    box-shadow:0 0 20px #fff000;
+}
+@keyframes animateCircle{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.mainpage_{
+    width:100wv;
+    height:100vh;
+    background:#ffcccb;
+}
+.gift {
+  position: absolute;
+  margin-top:350px;
+  margin-left:50px;
+  height: 200px;
+  width: 250px;
+  background-color: red;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+
+
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-color: #374a5d;
+  -webkit-box-shadow: -0.2rem 0.5rem 2.65rem rgba(0, 0, 0, 0.6);
+          box-shadow: -0.2rem 0.5rem 2.65rem rgba(0, 0, 0, 0.6);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.bottomline1 {
+  position: absolute;
+  width: 3rem;
+  height: inherit;
+  background: #e6e6e6;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.lid {
+  position: absolute;
+  width: 114%;
+  height: 2.5rem;
+  background-color: #374a5d;
+  -webkit-box-shadow: -0.2rem 0.5rem 2.65rem rgba(0, 0, 0, 0.6);
+          box-shadow: -0.2rem 0.5rem 2.65rem rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  left: -6%;
+}
+
+.lidline1 {
+  width: 3rem;
+  height: 2.5rem;
+  background: #e6e6e6;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.ribbonl {
+  position: relative;
+  -webkit-transform: rotate(135deg) scale(1.5);
+          transform: rotate(135deg) scale(1.5);
+  height: 150px;
+  width: 100px;
+  top: -120px;
+  left: 25px;
+}
+
+.ribbon1 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.ribbon2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  border-bottom: 57px solid #e6e6e6;
+  top: 1.9rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.ribbonr {
+  position: relative;
+  -webkit-transform: rotate(-135deg) scale(1.5);
+          transform: rotate(-135deg) scale(1.5);
+  height: 150px;
+  width: 100px;
+  top: -270px;
+  left: 120px;
+}
+.birthdaypage_{
+    width:100%;
+    height:100vh; 
+    background-image:url("https://i.pinimg.com/originals/a3/57/3c/a3573c74725a2b3df26ff600095a258c.gif");
+    background-repeat:no-repeat;
+    background-size:cover;
+background-attachment:fixed;
+background-size: cover; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover;  
+  margin:0;
+  padding:0;
+
+}
+.icons{
+    padding-left:70px;
+    padding-top:70px;
+    font-size:35px;
+    color:white;
+}
+.birthday_cake{
+    width:100%;
+    height:100vh;
+    background:black;
+    }
+.cake_part_1{
+    position:absolute;
+    width:300px;
+    margin:auto;
+    height:80px;
+    background-color:orange;
+     margin:auto;
+    left:0;
+    right:0;
+    top:65%;
+    bottom:0;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+.layer1{
+    position:absolute;
+    width:300px;
+    height:10px;
+    margin-top:10px;
+    background-color:#ffcccb;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+}
+.layer2{
+    position:absolute;
+    width:300px;
+    height:10px;
+    margin-top:35px;
+    background-color:#ffcccb;
+}
+.layer3{
+    position:absolute;
+    width:300px;
+    height:10px;
+    margin-top:60px;
+    background-color:#ffcccb;
+}
+
+.cake_part_2{
+    position:absolute;
+    width:250px;
+    height:80px;
+    background-color:pink;
+     margin:auto;
+    left:0;
+    right:0;
+    top:38%;
+    bottom:0;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+.layer4{
+    position:absolute;
+    width:250px;
+    height:10px;
+    margin-top:10px;
+    background-color:#ffcccb;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+}
+.layer5{
+    position:absolute;
+    width:250px;
+    height:10px;
+    margin-top:35px;
+    background-color:#ffcccb;
+}
+.layer6{
+    position:absolute;
+    width:250px;
+    height:10px;
+    margin-top:60px;
+    background-color:#ffcccb;
+}
+
+.cake_part_3{
+    position:absolute;
+    width:150px;
+    height:60px;
+    background-color:lightblue;
+     margin:auto;
+    left:0;
+    right:0;
+    top:10.8%;
+    bottom:0;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+.layer7{
+    position:absolute;
+    width:150px;
+    height:10px;
+    margin-top:10px;
+    background-color:white;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+}
+.layer8{
+    position:absolute;
+    width:150px;
+    height:10px;
+    margin-top:35px;
+    background-color:white;
+}
+.layer9{
+    position:absolute;
+    width:150px;
+    height:10px;
+    margin-top:60px;
+    background-color:white;
+}
+
+.candle{
+    position:absolute;
+    left:47%;
+    top:37%;
+    height:80px;
+    width:20px;
+    border-radius:8px 8px 3px 3px;
+    background:linear-gradient(45deg, red,green,red,green,red,green,red,green);
+    animation:candle 6s linear infinite;
+}
+.candle:before{
+    content:'';
+    position:absolute;
+    bottom:102%;
+    left:21%;
+    width:11px;
+    height:35px;
+    border-radius:115% 115% 70% 70%;
+    background-color:#e1383a;
+    box-shadow:0px 0px 10px red,
+               0px 0px 25px red,
+               0px 0px 40px red,
+               0px 0px 55px red,
+               0px 0px 70px red,
+               0px 0px 85px red,
+               0px 0px 100px red,
+               0px 0px 110px red,
+               0px 0px 130px red,
+               0px 0px 250px red;
+    animation:flame 4s linear infinite; 
+}
+@keyframes flame{
+    20%{
+        height:38px;
+        width:11px;
+    }
+    40%{
+        height:32px;
+        width:11px;
+    }
+    60%{
+        height:39px;
+        width:11px;
+    }
+    80%{
+        height:34px;
+        width:11px;
+    }
+}
+img{
+    width:100%;
+    height:170px;
+}
+    </style>
+    <div class="loading" id="container">
+        <div class="loader" id="loader_">
+           <span>Loading</span> 
+        </div>
+        </div>
+         
+        <div id="main_page" class="mainpage_"> 
+      <div class="gift" id="gift_box">
+        <div class="bottom"></div>
+        <div class="bottomline1"></div>
+        <div class="lid"></div>
+        <div class="lidline1"></div>
+
+        <div class="ribbonl">
+            <div class="ribbon1"></div>
+            <div class="ribbon2"></div>
+        </div>
+
+        <div class="ribbonr">
+            <div class="ribbon1"></div>
+            <div class="ribbon2"></div>
+        </div>  </div>
+        </div>
+         
+<div id="birthday_page" class="birthdaypage_">
+<div id="door" onclick="fun()">
+    <pre id="pre1">CLICK</pre>
+    <pre id="pre2">HERE</pre>
+</div>
+     <div class="icons">
+          <div class="row"> 
+        
+            <span>H</span>
+            <span>A</span>
+            <span>P</span>
+            <span>P</span>
+            <span>Y</span>
+          </div>
+          <div class="row"> 
+            <span>B</span>
+            <span>I</span>
+            <span>R</span>
+            <span>T</span>
+            <span>H</span>
+            <span>D</span>
+            <span>A</span>
+            <span>Y</span>
+           
+          </div>
+          <div class="row"> 
+            <span>R </span> 
+            <span>♡</span>
+            <span>H</span> 
+            <span>U</span>
+            <span>L</span>
+            <span> </span> 
+            <span>Bhai</span>
+            
+    </div>
+          </div>  
+          </div> 
+
+          <div id="cake" class="birthday_cake">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzNPmHMFplP9T2o2Tlo4099rusyTCLFJTY_Q&usqp=CAU"> <div class="cake_part_1">
+                  <div class="layer1"></div>
+                  <div class="layer2"></div>
+                  <div class="layer3"></div>
+              </div>
+              <div class="cake_part_2">
+                  <div class="layer4"></div>
+                  <div class="layer5"></div>
+                  <div class="layer6"></div>
+              </div>
+              <div class="cake_part_3">
+                  <div class="layer7"></div>
+                  <div class="layer8"></div>
+                  <div class="layer9"></div>
+              </div>
+                <div class="candle"></div>
+          </div>
+         <audio src="https://dl.dropbox.com/s/e93f5kxsmtankf3/Best%20Happy%20Birthday%20To%20You%20_%20Happy%20Birthday%20Songs%20Remix%202020%28M4A_128K%29_1.m4a?dl=0" id="audio1">
+          <script>
+             const body = document.querySelector('body');
+const audio = document.getElementById('audio1');
+ body.onclick =()=> {
+    audio.play();
+}
+$(function(){
+    setTimeout(function(){
+        $("#container").hide()
+        $("#loader_").hide()
+        $("#main_page").show()
+    },5000)
+    $("#main_page").hide()
+})
+$(function(){
+    $("#gift_box").click(function(){
+        $("#birthday_page").show()
+        $("#main_page").hide(2000)
+    })
+    $("#birthday_page").hide()
+    
+})
+
+$(function(){
+    setTimeout(function(){
+        $("#container").hide()
+        $("#loader_").hide()
+        $("#main_page").hide()
+        $("#cake").show()
+        $("#birthday_page").hide()
+    },40000)
+    $("#cake").hide()
+})
+
+         </script>
+    </body>
+</html>
